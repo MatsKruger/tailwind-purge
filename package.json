@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-purge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss ./src/tailwind.css -o ./dist/tailwind.css",
+    "purge": "npx purgecss --css ./dist/tailwind.css --config ./purgecss.config.js --output ./dist/purged.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatsKruger/tailwind-purge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatsKruger/tailwind-purge/issues"
+  },
+  "homepage": "https://github.com/MatsKruger/tailwind-purge#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  }
+}
